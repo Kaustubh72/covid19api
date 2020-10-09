@@ -5,7 +5,7 @@ const importData = require("./data.json");
 
 let port =process.env.PORT || 8000;
 app.get("/",(req,res) => {
-res.send("Hello World");
+res.send("THIS API IS MADE BY KAUSTUBH SINGH FOR VIT HACK -2020. AS PER PROBLEM STATEMENT GIVEN");
 });
 
 app.get("/covidpatient",(req,res) => {
