@@ -1,5 +1,7 @@
+var cors = require('cors');
 const express = require("express");
 const app =express();
+app.use(cors());
 
 const importData = require("./data.json");
 
@@ -8,7 +10,7 @@ app.get("/",(req,res) => {
 res.send("THIS API IS MADE BY KAUSTUBH SINGH FOR VIT HACK -2020. AS PER PROBLEM STATEMENT GIVEN");
 });
 
-app.get("/covidpatient",(req,res) => {
+app.get("/patient",(req,res) => {
     res.send(importData);
 });
 
